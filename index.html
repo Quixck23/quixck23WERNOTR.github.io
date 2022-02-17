@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NBA Rankings </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<style>
+    body {
+      background-image: url("https://user-images.githubusercontent.com/88118587/154198493-37b4b086-cdff-4ee1-b780-da8807e563b9.png");
+      background-repeat: repeat;
+    }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style="color:rgb(250, 80, 12);">NBA Rankings</h1>
+        <h2>Search for player stats</h2>
+      </div>
+      <div class="col-md-8">
+        <p style="font-size:150%;">
+            On this dashboard, we've loaded the results of our RandomForest model, and you are able to use the window below to look through the player data. We also included a couple of search parameters of the left-hand side of the dashboard if you have a specific player you are looking for. Lastly, at the bottom of the page, we included the player rankings by groups before and after the machine model to allow you to visualize the differences between the two. 
+        </p>
+        </br> 
+         </br> 
+            </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-3">
+                    <form class="bg-dark">
+                        <p style="font-size:160%;">Filter Search</p>
+                        <ul class="bg-dark">
+                          <li class="bg-dark">
+                            <label for="date">Enter Player Name</label>
+                            <input type="text" placeholder="LeBron James" id="player"/>
+                          </li>
+                          <li class="bg-dark">
+                            <label for="date">Enter Wins</label>
+                            <input type="text" placeholder="10" id="w"/>
+                          </li>
+                          <li class="bg-dark">
+                            <label for="date">Enter Losses</label>
+                            <input type="text" placeholder="10" id="l"/>
+                          </li>
+                          <li class="bg-dark">
+                            <label for="date">Enter Ranking</label>
+                            <input type="text" placeholder="70.0" id="rankings"/>
+                          </li>
+                          <li class="bg-dark">
+                            <label for="date">Enter Machine Ranking</label>
+                            <input type="text" placeholder="70.0" id="predictions"/>
+                          </li>
+                        </ul>
+                      </form>
+                  </div>
+                  <div class="col-md-9">
+                  <div class = "span3">
+                    <table class="content-table">
+                        <thead>
+                          <tr>
+                            <th>player</th>
+                            <th>team</th>
+                            <th>age</th>
+                            <th>season</th>
+                            <th>gp</th>
+                            <th>w</th>
+                            <th>l</th>
+                            <th>min_column</th>
+                            <th>pts</th>
+                            <th>fgm</th>
+                            <th>fga</th>
+                            <th>fg</th>
+                            <th>threepm</th>
+                            <th>threepa</th>
+                            <th>threep</th>
+                            <th>ftm</th>
+                            <th>fta</th>
+                            <th>ft</th>
+                            <th>oreb</th>
+                            <th>dreb</th>
+                            <th>reb</th>
+                            <th>ast</th>
+                            <th>tov</th>
+                            <th>stl</th>
+                            <th>blk</th>
+                            <th>pf</th>
+                            <th>fp</th>
+                            <th>dd2</th>
+                            <th>td3</th>
+                            <th>plus_minus</th>
+                            <th>rankings</th>
+                            <th>predictions</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+             
+            </div>
+        </div>
+        <p>                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       v  
+        </p>
+        <p>                           
+            
+        </p>
+        
+          <div class="frame">
+          <img src="OG_Rank_Groupings.png" alt="Nature"/> 
+        </div> 
+            </br> 
+            </br> 
+        <div class="frame">
+            <img src="MM_Rank_Groupings.png" alt="Nature"/> 
+          </div>        
+      </div>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/Correct_RF.js"></script>
+    <script src="static/js/app.js"></script>
+   
+</body>
+</html>    
